@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BATTLE ROYALE — local &amp; online run-and-gun</title>
+<meta name="description" content="A Broforce-style 2D run-and-gun deathmatch. Play in your browser or download for Windows.">
+<style>
+  :root{ --bg:#0a0b10; --panel:#14161f; --ink:#e9ecf5; --dim:#8b90a0; --gold:#ffd23a; --red:#e5403a; --line:#262a38; }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; background:var(--bg); color:var(--ink);
+    font-family:"Segoe UI",system-ui,Arial,sans-serif; }
+  a{ color:inherit; }
+  .wrap{ max-width:880px; margin:0 auto; padding:32px 20px 64px; }
+  header{ text-align:center; }
+  .hero{ width:100%; max-width:680px; image-rendering:pixelated; border-radius:10px;
+    border:1px solid var(--line); background:#05060a; margin:8px auto 0; display:block; }
+  h1{ font-size:clamp(34px,7vw,64px); letter-spacing:3px; margin:18px 0 4px; }
+  h1 .a{ color:var(--gold); } h1 .b{ color:var(--red); }
+  .tag{ color:var(--dim); font-size:clamp(14px,2.4vw,18px); margin:0 0 26px; }
+  .cta{ display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin:6px 0 10px; }
+  .btn{ text-decoration:none; padding:16px 26px; border-radius:10px; font-size:18px; font-weight:700;
+    border:1px solid var(--line); min-width:230px; text-align:center; transition:transform .06s ease, filter .15s ease; }
+  .btn:hover{ transform:translateY(-2px); filter:brightness(1.08); }
+  .btn:active{ transform:translateY(0); }
+  .play{ background:linear-gradient(180deg,#2ecf6b,#1ba350); color:#06210f; border-color:#1ba350; }
+  .dl{ background:linear-gradient(180deg,#3a7bd5,#2c5fb0); color:#eaf2ff; border-color:#2c5fb0; }
+  .sub{ color:var(--dim); font-size:13px; text-align:center; margin-top:4px; }
+  .grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:34px; }
+  @media (max-width:640px){ .grid{ grid-template-columns:1fr; } }
+  .card{ background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 20px; }
+  .card h3{ margin:0 0 10px; font-size:15px; letter-spacing:1px; text-transform:uppercase; color:var(--gold); }
+  .card p, .card li{ color:#c7ccda; font-size:14px; line-height:1.55; }
+  .card ul{ margin:6px 0 0; padding-left:18px; }
+  kbd{ background:#0c0e15; border:1px solid var(--line); border-bottom-width:2px; border-radius:5px;
+    padding:1px 7px; font-family:ui-monospace,Consolas,monospace; font-size:12px; color:var(--ink); }
+  .note{ background:#1a1206; border:1px solid #4a3a12; color:#f3d79a; border-radius:10px;
+    padding:12px 16px; font-size:13.5px; margin-top:26px; }
+  footer{ text-align:center; color:var(--dim); font-size:12px; margin-top:36px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img class="hero" src="hero.png" alt="BATTLE ROYALE" onerror="this.style.display='none'">
+    <h1><span class="a">BATTLE</span> <span class="b">ROYALE</span></h1>
+    <p class="tag">A run-and-gun pixel deathmatch — couch co-op and online.</p>
+
+    <div class="cta">
+      <a class="btn play" href="play/">▶ Play in Browser</a>
+      <a class="btn dl" href="download/BattleRoyale-Windows.zip">⬇ Download for Windows</a>
+    </div>
+    <p class="sub">Browser: no install, loads ~36&nbsp;MB. Windows: ~35&nbsp;MB zip (unzip &amp; run <b>BattleRoyale.exe</b>).</p>
+  </header>
+
+  <div class="note">
+    <b>Online is in beta.</b> In the menu choose <b>Online (Beta)</b> → <b>Railway</b> → Connect.
+    In the room, add a CPU or invite a friend (have them open this page too), press
+    <kbd>Space</kbd> to ready and <kbd>Enter</kbd> to start. Need at least 2 players.
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Controls (Player 1)</h3>
+      <ul>
+        <li><kbd>A</kbd>/<kbd>D</kbd> move, <kbd>W</kbd>/<kbd>S</kbd> aim up/down</li>
+        <li><kbd>Space</kbd> jump · <kbd>F</kbd> shoot</li>
+        <li><kbd>Q</kbd> melee · <kbd>E</kbd> special / call-in</li>
+        <li>Gamepads supported (couch co-op up to 8)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>What is this?</h3>
+      <p>Pick from a roster of action-movie bros, each with a unique weapon and a
+      devastating call-in. Destructible terrain, exploding everything, free-for-all to
+      the kill target. All art and sound generated in code.</p>
+    </div>
+  </div>
+
+  <footer>
+    Made with Godot. Online play runs on a dedicated server. · Beta build.
+  </footer>
+</div>
+</body>
+</html>
