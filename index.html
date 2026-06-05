@@ -25,6 +25,7 @@
   .btn:active{ transform:translateY(0); }
   .play{ background:linear-gradient(180deg,#2ecf6b,#1ba350); color:#06210f; border-color:#1ba350; }
   .dl{ background:linear-gradient(180deg,#3a7bd5,#2c5fb0); color:#eaf2ff; border-color:#2c5fb0; }
+  .mac{ background:linear-gradient(180deg,#6b7280,#4b5563); color:#f3f4f6; border-color:#4b5563; }
   .sub{ color:var(--dim); font-size:13px; text-align:center; margin-top:4px; }
   .grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:34px; }
   @media (max-width:640px){ .grid{ grid-template-columns:1fr; } }
@@ -48,10 +49,11 @@
 
     <div class="cta">
       <a class="btn play" href="play/">▶ Play in Browser</a>
-      <a class="btn dl" href="download/BattleRoyale-Windows.zip">⬇ Download for Windows</a>
+      <a class="btn dl" href="download/BattleRoyale-Windows.zip">⬇ Windows</a>
+      <a class="btn mac" href="download/BattleRoyale-macOS.zip">⬇ macOS</a>
     </div>
-    <p class="sub">Browser: no install, loads ~36&nbsp;MB. Windows: ~35&nbsp;MB zip (unzip &amp; run <b>BattleRoyale.exe</b>).
-    On <b>macOS / Linux</b>? Use <b>Play in Browser</b> — no install needed.</p>
+    <p class="sub">Browser: no install, loads ~36&nbsp;MB. Windows: ~35&nbsp;MB zip → run <b>BattleRoyale.exe</b>.
+    macOS: ~60&nbsp;MB zip (universal) → first launch, <b>right-click the app → Open</b> (unsigned). On <b>Linux</b>? Use the browser.</p>
   </header>
 
   <div class="note">
