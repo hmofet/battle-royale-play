@@ -26,6 +26,7 @@
   .play{ background:linear-gradient(180deg,#2ecf6b,#1ba350); color:#06210f; border-color:#1ba350; }
   .dl{ background:linear-gradient(180deg,#3a7bd5,#2c5fb0); color:#eaf2ff; border-color:#2c5fb0; }
   .mac{ background:linear-gradient(180deg,#6b7280,#4b5563); color:#f3f4f6; border-color:#4b5563; }
+  .deck{ background:linear-gradient(180deg,#3aa0ff,#1f6fd6); color:#04121f; border-color:#1f6fd6; }
   .sub{ color:var(--dim); font-size:13px; text-align:center; margin-top:4px; }
   .grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:34px; }
   @media (max-width:640px){ .grid{ grid-template-columns:1fr; } }
@@ -51,9 +52,11 @@
       <a class="btn play" href="play/">▶ Play in Browser</a>
       <a class="btn dl" href="download/BattleRoyale-Windows.zip">⬇ Windows</a>
       <a class="btn mac" href="download/BattleRoyale-macOS.zip">⬇ macOS</a>
+      <a class="btn deck" href="download/BattleRoyale-SteamDeck-Linux.zip">🎮 Steam Deck</a>
     </div>
     <p class="sub">Browser: no install, loads ~36&nbsp;MB. Windows: ~35&nbsp;MB zip → run <b>BattleRoyale.exe</b>.
-    macOS: ~60&nbsp;MB zip (universal) → first launch, <b>right-click the app → Open</b> (unsigned). On <b>Linux</b>? Use the browser.</p>
+    macOS: ~60&nbsp;MB zip (universal) → first launch, <b>right-click the app → Open</b> (unsigned).
+    <b>Steam Deck / Linux</b>: native build (see the Steam Deck card below).</p>
   </header>
 
   <div class="note">
@@ -79,6 +82,16 @@
       <p>Pick from a roster of action-movie bros, each with a unique weapon and a
       devastating call-in. Destructible terrain, exploding everything, free-for-all to
       the kill target. All art and sound generated in code.</p>
+    </div>
+    <div class="card">
+      <h3>🎮 Steam Deck</h3>
+      <p>The <b>Steam Deck</b> button is a native Linux build. In <b>Desktop Mode</b>:</p>
+      <ul>
+        <li>Download &amp; unzip, then make it runnable:<br><kbd>chmod +x BattleRoyale.x86_64</kbd></li>
+        <li>Run it, or add it as a <b>Non-Steam Game</b> to play in Game Mode.</li>
+        <li>The Deck's controls work as a gamepad — pick <b>Gamepad</b> in the online room.</li>
+        <li>Use the on-screen keyboard (<kbd>Steam</kbd>+<kbd>X</kbd>) to type the passphrase.</li>
+      </ul>
     </div>
   </div>
 
